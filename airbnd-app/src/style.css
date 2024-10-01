@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.img {
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin-inline: auto;
+}
+
+header {
+    padding-block: 20px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+/* hero styling */
+
+.hero {
+    padding-block: 30px;
+}
+
+.hero .hero-grid {
+    display: grid;
+    gap: 45px;
+}
+
+.hero .hero-img {
+    text-align: center;
+}
+
+.group7 {
+    width: 395px;
+}
+
+.hero-texts {
+    display: grid;
+    gap: 15px;
+}
+
+.hero-texts h1 {
+    font-size: 3rem;
+}
+
+.hero-texts p {
+    font-size: 1.5rem;
+    line-height: 1.22;
+    font-weight: 300;
+}
+
+/* card stying */
+
+.card {
+    padding-block: 30px;
+}
+
+.card-wrapper {
+    width: 95%;
+    max-width: 900px;
+    margin-left: auto;
+}
+
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-item {
+    width: 265px;
+    display: grid;
+    gap: 15px;
+}
+
+.card-texts {
+    display: grid;
+    gap: 8px;
+}
+
+.card span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-item span .contury {
+    opacity: 0.4;
+}
+
+.card-texts p {
+    font-weight: 300;
+}
+
+.card-texts p .price {
+    font-weight: 700;
+}
