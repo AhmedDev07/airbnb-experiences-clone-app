@@ -1,8 +1,23 @@
 import React from 'react'
-import group77 from '../assets/Group 77.png'
+import group77 from '../assets/images/Group 77.png'
+// import personImg from '../assets/images/image 12.png'
 import Card from './Card'
+import data from '../data.js'
 
 function Hero() {
+    const cards = data.map(item => {
+        return (
+            <Card 
+                img={item.coverImg}
+                rating={item.stats.rating}
+                reviewCount={item.stats.reviewCount}
+                location={item.location}
+                title={item.title}
+                price={item.price}
+            />
+        )
+    }) 
+
   return (
     <main>
         <section className="hero">
@@ -18,7 +33,9 @@ function Hero() {
                 </div>
             </div>
         </section>
-        <Card/>
+        <div className="card-flex">
+            {cards}
+        </div>
     </main>
   )
 }

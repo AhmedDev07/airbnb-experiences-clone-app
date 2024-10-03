@@ -1,45 +1,22 @@
 import React from 'react'
-import personImg from '../assets/image 12.png'
-import itemStart from '../assets/Star 1.png'
+import personImg from '../assets/images/mountain-bike 1.png'
+import itemStart from '../assets/images/Star 1.png'
 
-function Card() {
+
+function Card(props) {
   return (
     <section className="card">
         <div className="card-flex card-wrapper">
             
             <div className="card-item">
-                <img src={personImg}/>
+               <img src={personImg} alt="person" />
                 <div className="card-texts">
                     <span>
                         <img src={itemStart} alt="" />
-                        5.0<span className='contury'>(6).USA</span>
+                        {props.rating}<span className='contury'>({props.reviewCount}).{props.country}</span>
                     </span>
-                    <p>Life lessons with Katie Zaferes</p>
-                    <p><strong className='price'>From $136</strong> / person</p>
-                </div>
-            </div>
-
-            <div className="card-item">
-                <img src={personImg}/>
-                <div className="card-texts">
-                    <span>
-                        <img src={itemStart} alt="" />
-                        5.0<span className='contury'>(6).USA</span>
-                    </span>
-                    <p>Life lessons with Katie Zaferes</p>
-                    <p><strong className='price'>From $136</strong> / person</p>
-                </div>
-            </div>
-
-            <div className="card-item">
-                <img src={personImg}/>
-                <div className="card-texts">
-                    <span>
-                        <img src={itemStart} alt="" />
-                        5.0<span className='contury'>(6).USA</span>
-                    </span>
-                    <p>Life lessons with Katie Zaferes</p>
-                    <p><strong className='price'>From $136</strong> / person</p>
+                    <p>{props.title}</p>
+                    <p><strong className='price'>From ${props.price}</strong> / person</p>
                 </div>
             </div>
 
